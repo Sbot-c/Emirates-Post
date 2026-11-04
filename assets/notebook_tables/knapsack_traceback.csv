@@ -1,0 +1,5 @@
+Row,Cell,Above,Decision
+4 AJM,K[4][45] = 765,K[3][45] = 720,TAKE → move left 14 to w = 31
+3 SHJ,K[3][31] = 585,K[2][31] = 495,TAKE → move left 13 to w = 18
+2 JAF,K[2][18] = 360,K[1][18] = 135,TAKE → move left 14 to w = 4
+1 UMS,K[1][4] = 0,K[0][4] = 0,LEAVE → go up

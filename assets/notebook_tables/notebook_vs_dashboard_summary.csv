@@ -1,0 +1,13 @@
+Item,Notebook,Dashboard,Agree
+Routes under X = 38,13,13,✓
+DFS visit order,HUB → KAR → QUS → UMS → JAF → SHJ → AJM,HUB → KAR → QUS → UMS → JAF → SHJ → AJM,✓
+Connected,True,True,✓
+Kruskal total (min),124,124,✓
+All-routes total (min),334,334,✓
+Kruskal routes,6,6,✓
+Dijkstra KAR/QUS/UMS/SHJ/JAF/AJM,13/16/23/24/47/51,13/16/23/24/47/51,✓
+Within 20-min target,"KAR, QUS","KAR, QUS",✓
+Knapsack K[4][45],765,765,✓
+DP choice,"JAF, SHJ, AJM","JAF, SHJ, AJM",✓
+Greedy choice,"JAF, UMS, SHJ","JAF, UMS, SHJ",✓
+DP − greedy (AED/yr),45000,45000,✓

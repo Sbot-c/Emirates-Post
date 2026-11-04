@@ -1,0 +1,14 @@
+{
+  "_how_to_use": "After adding the ORIGINAL paper photo/scan (jpg/png) to this folder, copy this file to transcription.json and fill the final distances from HUB exactly as written on the paper (minutes). If any value differs from the dashboard, explain why in mismatch_explanation (arithmetic slip, tie order, rounding).",
+  "produced_by": "Siddal",
+  "confirmed_original_paper_trace": false,
+  "times": {
+    "KAR": null,
+    "QUS": null,
+    "UMS": null,
+    "JAF": null,
+    "SHJ": null,
+    "AJM": null
+  },
+  "mismatch_explanation": ""
+}

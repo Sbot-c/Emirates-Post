@@ -1,0 +1,157 @@
+{
+ "x": 38,
+ "hub": "HUB",
+ "promise": 20,
+ "budget": 450000,
+ "routes": 13,
+ "all_total": 334,
+ "mst_total": 124,
+ "mst_n": 6,
+ "saving_pct": 62.9,
+ "pass_before": 2,
+ "dp": {
+  "picks": [
+   "JAF",
+   "SHJ",
+   "AJM"
+  ],
+  "spent": 411960,
+  "left": 38040,
+  "benefit": 765000,
+  "service_plan": {
+   "direct": 2,
+   "alt_mode": 0,
+   "local": 3,
+   "outside": 1,
+   "outside_codes": [
+    "UMS"
+   ],
+   "with_disposition": 5,
+   "n_dest": 6,
+   "by_branch": {
+    "KAR": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "QUS": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "UMS": "OUTSIDE SELECTED SERVICE PLAN",
+    "JAF": "LOCAL FULFILMENT UPGRADE",
+    "SHJ": "LOCAL FULFILMENT UPGRADE",
+    "AJM": "LOCAL FULFILMENT UPGRADE"
+   },
+   "local_selected": 3,
+   "alt_selected": 0,
+   "alt_qualifying_selected": 0,
+   "selected_on_direct": 0
+  }
+ },
+ "greedy": {
+  "picks": [
+   "UMS",
+   "JAF",
+   "SHJ"
+  ],
+  "benefit": 720000,
+  "spent": 344340,
+  "service_plan": {
+   "direct": 2,
+   "alt_mode": 1,
+   "local": 2,
+   "outside": 1,
+   "outside_codes": [
+    "AJM"
+   ],
+   "with_disposition": 5,
+   "n_dest": 6,
+   "by_branch": {
+    "KAR": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "QUS": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "UMS": "ALTERNATIVE MODE WITHIN TARGET (ASSUMPTION)",
+    "JAF": "LOCAL FULFILMENT UPGRADE",
+    "SHJ": "LOCAL FULFILMENT UPGRADE",
+    "AJM": "OUTSIDE SELECTED SERVICE PLAN"
+   },
+   "local_selected": 2,
+   "alt_selected": 1,
+   "alt_qualifying_selected": 1,
+   "selected_on_direct": 0
+  }
+ },
+ "plus50": {
+  "budget": 500000,
+  "picks": [
+   "UMS",
+   "JAF",
+   "SHJ",
+   "AJM"
+  ],
+  "spent": 481860,
+  "left": 18140,
+  "benefit": 900000,
+  "service_plan": {
+   "direct": 2,
+   "alt_mode": 1,
+   "local": 3,
+   "outside": 0,
+   "outside_codes": [],
+   "with_disposition": 6,
+   "n_dest": 6,
+   "by_branch": {
+    "KAR": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "QUS": "DIRECT HUB TRANSFER WITHIN TARGET",
+    "UMS": "ALTERNATIVE MODE WITHIN TARGET (ASSUMPTION)",
+    "JAF": "LOCAL FULFILMENT UPGRADE",
+    "SHJ": "LOCAL FULFILMENT UPGRADE",
+    "AJM": "LOCAL FULFILMENT UPGRADE"
+   },
+   "local_selected": 3,
+   "alt_selected": 1,
+   "alt_qualifying_selected": 1,
+   "selected_on_direct": 0
+  },
+  "added": [
+   "UMS"
+  ],
+  "added_cost": 69900
+ },
+ "ums_now": 23,
+ "tree_vs_fast": {
+  "UMS": [
+   33,
+   23
+  ],
+  "JAF": [
+   57,
+   47
+  ]
+ },
+ "rationale": {
+  "holds": true,
+  "pass_at_promise": 2,
+  "candidates_cost": 481860,
+  "next_promise": 23,
+  "newly_passing": [
+   "UMS"
+  ],
+  "next_candidates": [
+   "JAF",
+   "SHJ",
+   "AJM"
+  ],
+  "next_candidates_cost": 411960,
+  "next_all_fit": true,
+  "next_dp": [
+   "JAF",
+   "SHJ",
+   "AJM"
+  ],
+  "next_greedy": [
+   "JAF",
+   "SHJ",
+   "AJM"
+  ],
+  "next_gap": 0,
+  "plateau": [
+   16,
+   22
+  ],
+  "slide_note": "Why 20 min? A proposed internal transfer target: 2 of 6 branches pass directly (the same for any target from 16 to 22 min); the 4 upgrade candidates cost AED 481,860 > AED 450,000, so the budget forces a choice. At 23 min UMS also passes and the other 3 cost AED 411,960 \u2014 all fit, DP = greedy, no constrained choice. A decision scenario, not a proven optimum or a customer-facing service."
+ }
+}

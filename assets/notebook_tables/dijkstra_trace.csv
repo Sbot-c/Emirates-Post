@@ -1,0 +1,8 @@
+Step,Settle,Routes checked,KAR,QUS,UMS,JAF,SHJ,AJM
+1,HUB (0),KAR: ∞→13 via HUB; QUS: ∞→16 via HUB; UMS: ∞→23 via HUB; SHJ: ∞→24 via HUB,13,16,23,∞,24,∞
+2,KAR (13),"QUS: 38 via KAR, no change; UMS: 33 via KAR, no change; JAF: ∞→47 via KAR; S...",✔13,16,23,47,24,∞
+3,QUS (16),"UMS: 48 via QUS, no change; SHJ: 45 via QUS, no change; AJM: ∞→53 via QUS",✔13,✔16,23,47,24,53
+4,UMS (23),"JAF: 47 via UMS = tie, keep via KAR",✔13,✔16,✔23,47,24,53
+5,SHJ (24),AJM: 53→51 via SHJ,✔13,✔16,✔23,47,✔24,51
+6,JAF (47),no unsettled neighbours,✔13,✔16,✔23,✔47,✔24,51
+7,AJM (51),no unsettled neighbours,✔13,✔16,✔23,✔47,✔24,✔51

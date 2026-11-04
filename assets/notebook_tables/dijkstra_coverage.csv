@@ -1,0 +1,7 @@
+Code,Area,Fastest time (min),Route,Direct Google drive (min),Margin vs 20 min,Status
+KAR,Al Karama,13,HUB → KAR,13,7,WITHIN TARGET
+QUS,Al Twar 5 / Al Qusais,16,HUB → QUS,16,4,WITHIN TARGET
+UMS,Umm Suqeim 2,23,HUB → UMS,23,-3,OUTSIDE TARGET
+SHJ,Al Soor,24,HUB → SHJ,24,-4,OUTSIDE TARGET
+JAF,Jebel Ali Free Zone,47,HUB → KAR → JAF (tie: HUB → UMS → JAF),38,-27,OUTSIDE TARGET
+AJM,Al Bustan,51,HUB → SHJ → AJM,38,-31,OUTSIDE TARGET

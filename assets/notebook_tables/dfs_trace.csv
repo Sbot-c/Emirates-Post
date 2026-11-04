@@ -1,0 +1,15 @@
+Step,Action,Stack / path,Visited
+1,Visit HUB (start),HUB,1
+2,Visit KAR (from HUB),HUB > KAR,2
+3,Visit QUS (from KAR),HUB > KAR > QUS,3
+4,Visit UMS (from QUS),HUB > KAR > QUS > UMS,4
+5,Visit JAF (from UMS),HUB > KAR > QUS > UMS > JAF,5
+6,Backtrack (pop JAF),HUB > KAR > QUS > UMS,5
+7,Backtrack (pop UMS),HUB > KAR > QUS,5
+8,Visit SHJ (from QUS),HUB > KAR > QUS > SHJ,6
+9,Visit AJM (from SHJ),HUB > KAR > QUS > SHJ > AJM,7
+10,Backtrack (pop AJM),HUB > KAR > QUS > SHJ,7
+11,Backtrack (pop SHJ),HUB > KAR > QUS,7
+12,Backtrack (pop QUS),HUB > KAR,7
+13,Backtrack (pop KAR),HUB,7
+14,Backtrack (pop HUB),(empty),7

@@ -1,0 +1,33 @@
+{
+  "_note": "Values transcribed by the Integration & Business Lead from the members' TYPED reference documents (not handwritten traces). Used only to show whether the live dashboard reproduces each member's own reference key. They are not dashboard answers.",
+  "dfs": {
+    "source_file": "DFS_Solution_EmiratesPost_X38.pdf (Kushal, Data Lead pack) + data_check_output_X38.txt",
+    "visit_order": ["HUB", "KAR", "QUS", "UMS", "JAF", "SHJ", "AJM"],
+    "tree_edges": ["HUB-KAR", "KAR-QUS", "QUS-UMS", "UMS-JAF", "QUS-SHJ", "SHJ-AJM"],
+    "visited": 7,
+    "connected": true,
+    "routes": 13
+  },
+  "kruskal": {
+    "source_file": "Kruskal_Solution_EmiratesPost_X38.pdf (Shashaank, Tab1 pack) + kruskal_check_output_X38.txt",
+    "accepted": ["HUB-KAR", "HUB-QUS", "KAR-UMS", "HUB-SHJ", "UMS-JAF", "SHJ-AJM"],
+    "rejected": ["HUB-UMS", "KAR-QUS", "QUS-SHJ", "KAR-SHJ", "QUS-UMS", "KAR-JAF", "QUS-AJM"],
+    "total": 124,
+    "all_total": 334
+  },
+  "dijkstra": {
+    "source_file": "Tab2_Routing README.md (Siddal) + Data Lead Decision sheet, Finding 2 — no typed Dijkstra step table was supplied",
+    "times": {"KAR": 13, "QUS": 16, "UMS": 23, "SHJ": 24, "JAF": 47, "AJM": 51},
+    "failing_at_20": ["UMS", "SHJ", "JAF", "AJM"]
+  },
+  "knapsack": {
+    "source_file": "Knapsack_HandTrace_Sheet_Joan.pdf (formatted, computer-generated) + knapsack_check_output_B450k.txt",
+    "trace_units": {"UMS": 7, "JAF": 14, "SHJ": 13, "AJM": 14},
+    "budget_units": 45,
+    "bottom_right_k": 765,
+    "chosen": ["JAF", "SHJ", "AJM"],
+    "greedy": ["JAF", "UMS", "SHJ"],
+    "dp_benefit_aed": 765000,
+    "greedy_benefit_aed": 720000
+  }
+}

@@ -1,0 +1,4 @@
+# Development / validation tools (not needed to run the dashboard). Versions as used in the v2.1 validation run.
+-r requirements-lock.txt
+pytest==9.2.0
+python-pptx==1.0.2

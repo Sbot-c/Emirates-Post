@@ -1,0 +1,5 @@
+Order,Upgrade,Benefit per AED,Cost (AED),Fits?,Left after (AED)
+1,JAF,2.51,"143,520",yes → take,"306,480"
+2,UMS,1.93,"69,900",yes → take,"236,580"
+3,SHJ,1.72,"130,920",yes → take,"105,660"
+4,AJM,1.31,"137,520",no → skip,"105,660"

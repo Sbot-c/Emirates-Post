@@ -1,0 +1,84 @@
+Branches: HUB, KAR, QUS, UMS, JAF, SHJ, AJM
+All 21 pairs valid. Min 13 min, max 65 min.
+
+ X | routes | in 10-14 | connected | cut off
+---+--------+----------+-----------+--------
+10 |      0 |          |        no | AJM,JAF,KAR,QUS,SHJ,UMS
+11 |      0 |          |        no | AJM,JAF,KAR,QUS,SHJ,UMS
+12 |      0 |          |        no | AJM,JAF,KAR,QUS,SHJ,UMS
+13 |      0 |          |        no | AJM,JAF,KAR,QUS,SHJ,UMS
+14 |      1 |          |        no | AJM,JAF,QUS,SHJ,UMS
+15 |      1 |          |        no | AJM,JAF,QUS,SHJ,UMS
+16 |      1 |          |        no | AJM,JAF,QUS,SHJ,UMS
+17 |      2 |          |        no | AJM,JAF,SHJ,UMS
+18 |      2 |          |        no | AJM,JAF,SHJ,UMS
+19 |      2 |          |        no | AJM,JAF,SHJ,UMS
+20 |      2 |          |        no | AJM,JAF,SHJ,UMS
+21 |      3 |          |        no | AJM,JAF,SHJ
+22 |      3 |          |        no | AJM,JAF,SHJ
+23 |      3 |          |        no | AJM,JAF,SHJ
+24 |      4 |          |        no | AJM,JAF,SHJ
+25 |      6 |          |        no | AJM
+26 |      7 |          |        no | AJM
+27 |      7 |          |        no | AJM
+28 |      8 |          |       YES | -
+29 |      8 |          |       YES | -
+30 |      9 |          |       YES | -
+31 |     10 |      yes |       YES | -
+32 |     10 |      yes |       YES | -
+33 |     11 |      yes |       YES | -
+34 |     11 |      yes |       YES | -
+35 |     12 |      yes |       YES | -
+36 |     12 |      yes |       YES | -
+37 |     12 |      yes |       YES | -
+38 |     13 |      yes |       YES | -
+39 |     15 |          |       YES | -
+40 |     15 |          |       YES | -
+41 |     16 |          |       YES | -
+42 |     16 |          |       YES | -
+43 |     16 |          |       YES | -
+44 |     16 |          |       YES | -
+45 |     16 |          |       YES | -
+46 |     16 |          |       YES | -
+47 |     16 |          |       YES | -
+48 |     16 |          |       YES | -
+49 |     18 |          |       YES | -
+50 |     18 |          |       YES | -
+51 |     18 |          |       YES | -
+52 |     18 |          |       YES | -
+53 |     18 |          |       YES | -
+54 |     19 |          |       YES | -
+55 |     19 |          |       YES | -
+56 |     20 |          |       YES | -
+57 |     20 |          |       YES | -
+58 |     20 |          |       YES | -
+59 |     20 |          |       YES | -
+60 |     20 |          |       YES | -
+
+X values with 10-14 routes AND connected: [31, 32, 33, 34, 35, 36, 37, 38]
+
+=== Chosen X = 38 min: 13 routes ===
+DFS from HUB (neighbours in matrix order HUB, KAR, QUS, UMS, JAF, SHJ, AJM; compare with your paper trace):
+  1. visit HUB (start)      path: HUB
+  2. visit KAR (from HUB)  path: HUB > KAR
+  3. visit QUS (from KAR)  path: HUB > KAR > QUS
+  4. visit UMS (from QUS)  path: HUB > KAR > QUS > UMS
+  5. visit JAF (from UMS)  path: HUB > KAR > QUS > UMS > JAF
+  6. done  JAF   no unvisited neighbours, back to UMS
+  7. done  UMS   no unvisited neighbours, back to QUS
+  8. visit SHJ (from QUS)  path: HUB > KAR > QUS > SHJ
+  9. visit AJM (from SHJ)  path: HUB > KAR > QUS > SHJ > AJM
+ 10. done  AJM   no unvisited neighbours, back to SHJ
+ 11. done  SHJ   no unvisited neighbours, back to QUS
+ 12. done  QUS   no unvisited neighbours, back to KAR
+ 13. done  KAR   no unvisited neighbours, back to HUB
+ 14. done  HUB   no unvisited neighbours, back to -
+Visit order: HUB > KAR > QUS > UMS > JAF > SHJ > AJM
+DFS tree edges: HUB-KAR, KAR-QUS, QUS-UMS, UMS-JAF, QUS-SHJ, SHJ-AJM
+CONNECTED: every branch reachable.
+Branches with only ONE route (lose that road, they are cut off): none
+No single point of failure: any one branch can close and the rest stay connected.
+At X-5 = 33: 11 routes, connected
+networkx cross-check is_connected(): True
+
+Wrote times.csv (21 pairs) and routes.csv (routes under X) for the analysts.

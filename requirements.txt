@@ -1,0 +1,6 @@
+streamlit>=1.50
+pandas>=2.2
+networkx>=3.3
+plotly>=5.20
+Pillow>=10.0
+matplotlib>=3.8

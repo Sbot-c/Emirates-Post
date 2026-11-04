@@ -1,0 +1,5 @@
+Code,Upgrade,Cost_AED,Benefit_AED,Minutes_after,Benefit_reason,Cost_basis
+UMS,Express motorbike courier,69900,135000,18,"About 15 Express orders a day lost x AED 30 x 300 days; residential, misses the promise by 3 min","Scooter AED 9,900 + rider AED 54,000 (AED 3,000/month + 1,500 on-costs) + fuel/insurance/RTA AED 6,000"
+JAF,JAFZA mini-hub,143520,360000,0,About 8 Premium B2B shipments a day x AED 150 x 300 days; free-zone firms ship time-critical documents,"1,200 sq ft x AED 40 = 48,000 + 20% JAFZA fee 9,600 + agency 4,800 + fit-out 15,000 + storekeeper 51,120 + night restock 15,000"
+SHJ,Sharjah mini-hub,130920,225000,0,About 25 Express orders a day x AED 30 x 300 days; government and business documents,"1,200 sq ft x AED 40 = 48,000 + agency 4,800 + fit-out 15,000 + storekeeper 51,120 + night restock 12,000"
+AJM,Ajman mini-hub,137520,180000,0,"About 20 Express orders a day x AED 30 x 300 days; high demand, lower-value parcels","1,200 sq ft x AED 45 = 54,000 + agency 5,400 + fit-out 15,000 + storekeeper 51,120 + night restock 12,000"
